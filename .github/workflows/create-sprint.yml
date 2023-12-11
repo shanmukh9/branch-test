@@ -1,0 +1,22 @@
+name: Create Sprint Branch
+
+on:
+  schedule:
+    - cron: '50 17 * * *'  # Schedule it to run at midnight every Sunday (adjust the schedule as needed)
+
+jobs:
+  create_sprint_branch:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Specify the Python version
+
+    - name: Run Python script
+      run: |
+        python create_sprint_branch.py  # Replace with the actual filename if different
