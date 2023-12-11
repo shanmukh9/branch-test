@@ -2,8 +2,8 @@ name: Create Sprint Branch
 
 on:
   schedule:
-    - cron: '20 18 * * *'  # Schedule it to run at midnight every Sunday (adjust the schedule as needed)
-
+    - cron: '20 18 * * *'
+  workflow_dispatch:
 jobs:
   create_sprint_branch:
     runs-on: ubuntu-latest
