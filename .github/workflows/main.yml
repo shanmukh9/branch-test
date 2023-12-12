@@ -2,8 +2,8 @@ name: Test Sprint creation
 
 on:
   schedule:
-    - cron: '45 18 * * 0'  # Schedule it to run at midnight every Sunday (adjust the schedule as needed)
-  workflow_dispatch:  
+    - cron: '16 10 * * *'  
+  
 
 jobs:
   create_sprint_branch:
