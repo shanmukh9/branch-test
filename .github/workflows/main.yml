@@ -2,7 +2,7 @@ name: Test Sprint creation
 
 on:
   schedule:
-    - cron: '16 10 * * *'  
+    - cron: '59 10 * * *'  
   
 
 jobs:
